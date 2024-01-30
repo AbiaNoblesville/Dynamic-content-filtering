@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Item Filter</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="filter">
+    <label for="category">Filter by Category:</label>
+    <select id="category" onchange="filterItems(this.value)">
+      <option value="all">All Categories</option>
+      <option value="category1">Category 1</option>
+      <option value="category2">Category 2</option>
+      <!-- Add more categories as needed -->
+    </select>
+  </div>
+
+  <ul class="item-list" id="itemList">
+    <li class="item category1">Banana</li>
+    <li class="item category2">Yam</li>
+    <li class="item category1">Mango</li>
+    <li class="item category2">Potatoes</li>
+    <!-- Add more items with appropriate categories -->
+  </ul>
+</div>
+
+<script src="./main.js"></script>
+
+</body>
+</html>
